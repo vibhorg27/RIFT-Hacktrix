@@ -1,0 +1,24 @@
+{
+    "name": "Respectful Internet Filtering Tool (RIFT)",
+    "version": "1.0.0",
+    "description": "Removes toxic and inappropriate text from the websites being visited.",
+    "manifest_version": 3,
+    "author": "Vibhor, Abhisht, Asmit, Leon",
+    "action": {
+      "default_popup": "index.html",
+      "default_title": "RIFT Dashboard"
+    },
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "host_permissions": ["https://www.google.com/"],
+    "permissions": ["tabs", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+    
+  }
+  
