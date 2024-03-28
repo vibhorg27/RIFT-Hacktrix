@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 def check_toxicity_api(sentence):
-  API_KEY = 'AIzaSyBNZPu0HgjQyP_fBa7dMaCuv8eJjAE8QJQ'
+  API_KEY = 'AIzaSyAEDAWTjTM1pjCKlZ8DisniLXyCpJmlZkM'
 
   client = discovery.build(
     "commentanalyzer",
